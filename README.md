@@ -1,6 +1,6 @@
 # lerna-webpack-template
 
-[DEMO](https://dan-kez.github.io/lerna-webpack-template/)
+[DEMO](https://muhino.github.io/lerna-webpack-template/)
 
 This repository provides an example configuration for a monorepo using [lerna](https://github.com/lerna/lerna). There are a few features
 baked into this relatively simple app.
@@ -15,7 +15,7 @@ baked into this relatively simple app.
 
 1. Using "external" & code splitting to only load the code necessary
 
-1. A mix of TypeScript and Javascript packages (to show a transitional state)
+1. A possibility to mix of TypeScript and Javascript packages (to show a transitional state)
 
 ## Code splitting + Routing example
 
@@ -44,32 +44,36 @@ This also has some drawbacks / caveats:
 
 ## Commands
 
+* Probably the best way to start with the project: clean, compile, build, test and start demo:
+    ```BASH
+    npm run demo
+    ```
+
 * [Bootstrap](https://github.com/lerna/lerna#bootstrap) all dependencies. This will hoist shared packages to the root dir for a faster install. It will also link your dependencies together via symlinks.
     > **NOTE - use yarn install on the root repository first to install the necessary devdependencies (lerna)**
-
     ```BASH
-    yarn bootstrap
+    npm run bootstrap
     ```
 
 * Start a dev server. This will run webpack in any package that has a `dev` script.
     ```BASH
-    yarn dev
+    npm run dev
     ```
 
 * Build webpack across all packages
     ```BASH
-    yarn build
+    npm run build
     ```
 
-* Lint all JS packages
+* Lint all JS packages via ESLint
     ```BASH
-    yarn lint
+    npm run lint
     ```
 
 
-* Lint all TS packages
+* Lint all JS packages via Semistandard
     ```BASH
-    yarn lint:ts
+    lnpm run int:semi
     ```
 
 ## Directory structure
