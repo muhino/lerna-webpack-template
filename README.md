@@ -73,7 +73,7 @@ This also has some drawbacks / caveats:
 
 * Lint all JS packages via Semistandard
     ```BASH
-    lnpm run int:semi
+    npm run int:semi
     ```
 
 ## Directory structure

@@ -56,6 +56,6 @@
     "dist": "npm run clean && npm run bootstrap && npm run build",
     "dev": "lerna run dev --stream",
     "deploy": "gh-pages -d packages/router/dist",
-    "demo": "npm run clean:modules && npm install && npm run dist && npm run test && npm run dev"
+    "demo": "npm run clean:full && npm install && npm run dist && npm run test && npm run dev"
   }
 }
